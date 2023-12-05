@@ -1,35 +1,19 @@
-import logo_white from "@images/logo-white.png";
 import nat_1_large from "@images/nat-1-large.jpg";
 import nat_2_large from "@images/nat-2-large.jpg";
 import nat_3_large from "@images/nat-3-large.jpg";
 import nat_8 from "@images/nat-8.jpg";
 import nat_9 from "@images/nat-9.jpg";
 import logo_green_2x from "@images/logo-green-2x.png";
-
+import Navigation from "@components/elements/Navigation";
+import Header from "@components/elements/Header";
 import "@styles/main.scss";
 import styles from "./App.module.scss";
-import Navigation from "@components/elements/Navigation";
 
 function App() {
   return (
     <div className={styles.app}>
       <Navigation />
-      <header className="header">
-        <div className="header__logo-box">
-          <img src={logo_white} alt="Logo" className="header__logo" />
-        </div>
-
-        <div className="header__text-box">
-          <h1 className="heading-primary">
-            <span className="heading-primary--main">Outdoors</span>
-            <span className="heading-primary--sub">is where life happens</span>
-          </h1>
-
-          <a href="#section-tours" className="btn btn--white btn--animated">
-            Discover our tours
-          </a>
-        </div>
-      </header>
+      <Header />
 
       <main>
         <section className="section-about">
@@ -433,22 +417,6 @@ function App() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="col-1-of-2">
-            <p className="footer__copyright">
-              Built by{" "}
-              <a href="#" className="footer__link">
-                Jonas Schmedtmann
-              </a>{" "}
-              for his online course{" "}
-              <a href="#" className="footer__link">
-                Advanced CSS and Sass
-              </a>
-              . Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to
-              use this webpage for both personal and commercial use, but NOT to
-              claim it as your own design. A credit to the original author,
-              Jonas Schmedtmann, is of course highly appreciated!
-            </p>
           </div>
         </div>
       </footer>
