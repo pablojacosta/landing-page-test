@@ -1,3 +1,11 @@
+import logo_white from "@images/logo-white.png";
+import nat_1_large from "@images/nat-1-large.jpg";
+import nat_2_large from "@images/nat-2-large.jpg";
+import nat_3_large from "@images/nat-3-large.jpg";
+import nat_8 from "@images/nat-8.jpg";
+import nat_9 from "@images/nat-9.jpg";
+import logo_green_2x from "@images/logo-green-2x.png";
+
 import "@styles/main.scss";
 import styles from "./App.module.scss";
 
@@ -50,7 +58,7 @@ function App() {
 
       <header className="header">
         <div className="header__logo-box">
-          <img src="img/logo-white.png" alt="Logo" className="header__logo" />
+          <img src={logo_white} alt="Logo" className="header__logo" />
         </div>
 
         <div className="header__text-box">
@@ -99,17 +107,17 @@ function App() {
             <div className="col-1-of-2">
               <div className="composition">
                 <img
-                  src="img/nat-1-large.jpg"
+                  src={nat_1_large}
                   alt="Photo 1"
                   className="composition__photo composition__photo--p1"
                 />
                 <img
-                  src="img/nat-2-large.jpg"
+                  src={nat_2_large}
                   alt="Photo 2"
                   className="composition__photo composition__photo--p2"
                 />
                 <img
-                  src="img/nat-3-large.jpg"
+                  src={nat_3_large}
                   alt="Photo 3"
                   className="composition__photo composition__photo--p3"
                 />
@@ -306,7 +314,7 @@ function App() {
             <div className="story">
               <figure className="story__shape">
                 <img
-                  src="img/nat-8.jpg"
+                  src={nat_8}
                   alt="Person on a tour"
                   className="story__img"
                 />
@@ -331,7 +339,7 @@ function App() {
             <div className="story">
               <figure className="story__shape">
                 <img
-                  src="img/nat-9.jpg"
+                  src={nat_9}
                   alt="Person on a tour"
                   className="story__img"
                 />
@@ -434,11 +442,7 @@ function App() {
 
       <footer className="footer">
         <div className="footer__logo-box">
-          <img
-            src="img/logo-green-2x.png"
-            alt="Full logo"
-            className="footer__logo"
-          />
+          <img src={logo_green_2x} alt="Full logo" className="footer__logo" />
         </div>
         <div className="row">
           <div className="col-1-of-2">
@@ -494,8 +498,8 @@ function App() {
       <div className="popup" id="popup">
         <div className="popup__content">
           <div className="popup__left">
-            <img src="img/nat-8.jpg" alt="Tour photo" className="popup__img" />
-            <img src="img/nat-9.jpg" alt="Tour photo" className="popup__img" />
+            <img src={nat_8} alt="Tour photo" className="popup__img" />
+            <img src={nat_9} alt="Tour photo" className="popup__img" />
           </div>
           <div className="popup__right">
             <a href="#section-tours" className="popup__close">
